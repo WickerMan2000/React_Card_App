@@ -1,9 +1,9 @@
 import styles from './UserInformation.module.css';
 
-const Userinformation = props => {
+const Userinformation = ({ name, age }) => {
     return (
         <div className={styles.result}>
-            My name is {props.name} and I am {props.age} years old.
+            My name is {name} and I am {age} years old.
         </div>
     );
 }

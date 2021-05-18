@@ -8,7 +8,7 @@ const messages = ['You have to input a valid name',
     'Your age must be a positive number and smaller than 120!',
     'Please insert your name and your age'];
 
-const User = props => {
+const User = ({ submissionData }) => {
     const [name, setName] = useState('');
     const [age, setAge] = useState('');
     const [isValidName, setIsValidName] = useState(false);
@@ -17,21 +17,23 @@ const User = props => {
     const [message, setMessage] = useState([]);
 
     const nameChangeHandler = event => {
-        if (event.target.value.trim().length === 0) {
+        const { value } = event.target;
+        if (value.trim().length === 0) {
             setIsValidName(false);
         } else {
             setIsValidName(true);
         }
-        setName(event.target.value.charAt(0).toUpperCase() + event.target.value.slice(1));
+        setName(value.charAt(0).toUpperCase() + value.slice(1));
     }
 
     const numberChangeHandler = event => {
-        if (event.target.value <= 0 || event.target.value > 120) {
+        const { value } = event.target;
+        if (value <= 0 || value > 120) {
             setIsValidAge(false);
         } else {
             setIsValidAge(true);
         }
-        setAge(event.target.value);
+        setAge(value);
     }
 
     const itIsClicked = () => {
@@ -61,7 +63,7 @@ const User = props => {
             return;
         }
 
-        props.submissionData(submission);
+        submissionData(submission);
         setIsClicked(false);
         setIsValidName(false);
         setIsValidAge(false);

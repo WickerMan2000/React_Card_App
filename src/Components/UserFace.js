@@ -1,13 +1,13 @@
 import User from './User';
 
-const UserFace = props => {
+const UserFace = ({ onAddSubmission }) => {
 
     const getTheSubmittedData = submittedData => {
         const submitted = {
             ...submittedData,
             id: Math.random().toString()
         }
-        props.onAddSubmission(submitted);
+        onAddSubmission(submitted);
     }
 
     return (

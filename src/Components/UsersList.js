@@ -1,11 +1,11 @@
 import styles from './UsersList.module.css';
 import UserInformation from './UserInformation';
 
-const UsersList = props => {
+const UsersList = ({ items }) => {
 
     return (
         <div className={styles.list}>
-            {props.items.map(item => {
+            {items.map(item => {
                 return <UserInformation name={item.userName} age={item.userAge} />
             })}
         </div>

@@ -1,8 +1,8 @@
 import styles from './BackDrop.module.css';
 
-const BackDrop = props => {
+const BackDrop = ({ error, click }) => {
     return (
-        <div className={props.error && styles.backdrop} onClick={props.click}></div>
+        <div className={error && styles.backdrop} onClick={click}></div>
     );
 }
 
