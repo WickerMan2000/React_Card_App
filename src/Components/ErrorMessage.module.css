@@ -1,0 +1,24 @@
+.invalid {
+    background: lightcoral;
+    font: medium;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    height: 30%;
+    text-align: center;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.message {
+    font: medium;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    height: 20%;
+    text-align: center;
+    background: rgb(193, 199, 193);
+}

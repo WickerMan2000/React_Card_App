@@ -1,0 +1,31 @@
+.form-control {
+    margin: 0.5rem 0;
+    border-radius: 6px;
+    border: 1px solid rgb(29, 26, 26);
+    width: 40%;
+    margin-left: 350px;
+    background: rgb(193, 199, 193);
+  }
+  
+  .form-control label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    color: rgb(19, 107, 107);
+}
+
+.form-control input {
+    font: inherit;
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 40rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    max-width: 90%;
+    margin-bottom: 3rem;
+  }

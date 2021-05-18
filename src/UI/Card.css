@@ -1,0 +1,23 @@
+.card {
+  position: fixed;
+  top: 9rem;
+  left: 8rem;
+  border-radius: 12px;
+  border: solid;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+  width: 45%;
+  margin-top: 5rem;
+  margin-left: 11rem;
+  height: 10rem;
+  /* opacity: 1;
+  transform: translateX(8rem);
+  transition: opacity 200ms linear, transform 0.6s cubic-bezier(0.12, 0, 0.39, 0); */
+  background: rgb(193, 199, 193);
+  z-index: 200;
+}
+
+.card Button {
+  position: absolute;
+  border-radius: 6px;
+  right: 2rem;
+}
